@@ -1,0 +1,16 @@
+body{
+    background-image: url('sky.jpg');
+}
+input {
+    opacity: 0.3;
+    width: auto;
+    color: black ;
+    border: 2px solid black;
+}
+.period {
+    padding: 50px;
+}
+form {
+    margin-left: 10px;
+    background-color: black;
+}

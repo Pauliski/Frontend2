@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19-Estimator</title>
+ </head>
+ <link rel="stylesheet" href="style.css.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+ <body class="bg-secondary text-white">
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand">SDGAssessment</a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
+   <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>
+                Modes of transmission of the COVID-19 virus
+            </h1>
+            <p>Respiratory infections can be transmitted through droplets of different sizes: when the droplet particles are >5-10 μm in diameter they are referred to as respiratory droplets, and when then are <5μm in diameter, they are referred to as droplet nuclei.1 According to current evidence, COVID-19 virus is primarily transmitted between people through respiratory droplets and contact routes.2-7 In an analysis of 75,465 COVID-19 cases in China, airborne transmission was not reported.8</p>
+        <p>Droplet transmission occurs when a person is in in close contact (within 1 m) with someone who has respiratory symptoms (e.g., coughing or sneezing) and is therefore at risk of having his/her mucosae (mouth and nose) or conjunctiva (eyes) exposed to potentially infective respiratory droplets. Transmission may also occur through fomites in the immediate environment around the infected person.8 Therefore, transmission of the COVID-19 virus can occur by direct contact with infected people and indirect contact with surfaces in the immediate environment or with objects used on the infected person (e.g., stethoscope or thermometer).</p>
+        </div>
+      <div class="col-md-6" >
+          <h1 class="ml-5">Covid-19 Estimator</h1>
+        
+          <form action="/" id="form1" class=" ml-5">
+            <br>
+            <input type="text" class="disp col-md-7" placeholder="Population"  data-population=""><br>
+            <input type="text" class="disp col-md-7" class="timeElapse" data-time-to-elapse="[days, weeks, year]" placeholder="TIme Elapse"><br>
+            <input type="text" class="disp col-md-7" class="timeElapse" data-reported-cases="" placeholder="Number of reported cases"><br>
+            <input type="text" class="disp col-md-7" class="timeElapse" data-total-hopital-bed="" placeholder="Number of available bed" ><br>
+            <input type="radio" data-period-time="" name="period" class="period" value="day">
+            <label for="day" class="day">Day</label><br>
+            <input type="radio" data-period-time="period" name="period" class="period" value="week">
+            <label for="week" class="week">Week</label><br>
+            <input type="radio" data-period-time="period" name="period" class="period" value="month">
+            <label for="month" class="month">Month</label><br>
+            <button type="submit" form="form1" data-go-estimate="">Submit</button>
+        </form>
+    </div>
+ </div>
+ </div>
+ </div>
+ <footer id="page-footer" class="navbar navbar-light justify-content-between flex-row-reverse">
+    <div class="nav">
+      <small class="nav-item"><a class="nav-link text-info" href="/contact">Contact<span class="d-none d-sm-inline"> us</span></a></small>
+      <small class="nav-item"><a class="nav-link text-info" href="/">Terms<span class="d-none d-sm-inline"> of use</span></a></small>
+      <small class="nav-item"><a class="nav-link text-info" href="/">Privacy<span class="d-none d-sm-inline"> policy</span></a></small>
+    </div>
+    <small class="copy">Copyright &copy; 2020 <a target="_blank" href="/">SDGAssessment</a>. 
+
+    
+
+ <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
