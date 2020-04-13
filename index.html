@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+
  <html lang="en">
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covid-19-Estimator</title>
-    
  </head>
  <link rel="stylesheet" href="style.css">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
@@ -14,7 +13,7 @@
         <a class="navbar-brand">SDGAssessment</a>
         <form class="form-inline">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
         </form>
       </nav>
    <div class="container-fluid">
@@ -31,15 +30,15 @@
         
           <form action="/" id="form1" class=" ml-5">
             <br>
-            <input type="text" class="disp col-md-7" placeholder="Population"  data-population=""><br><p></p>
-            <input type="text" class="disp col-md-7" class="timeElapse" data-time-to-elapse="[days, weeks, year]" placeholder="TIme Elapse"><br><p></p>
-            <input type="text" class="disp col-md-7" class="timeElapse" data-reported-cases="" placeholder="Number of reported cases"><br><p></p>
-            <input type="text" class="disp col-md-7" class="timeElapse" data-total-hopital-bed="" placeholder="Number of available bed" ><br><p></p>
-            <input type="radio" data-period-time="" name="period" class="period" value="day">
+            <input type="text" aria-label="1" class="disp col-md-7" placeholder="Population"  data-population=""><br><p></p>
+            <input type="text" aria-label="2" class="disp col-md-7" class="timeElapse" data-time-to-elapse="[days, weeks, year]" placeholder="TIme Elapse"><br><p></p>
+            <input type="text" aria-label="3" class="disp col-md-7" class="timeElapse" data-reported-cases="" placeholder="Number of reported cases"><br><p></p>
+            <input type="text" aria-label="4" class="disp col-md-7" class="timeElapse" data-total-hopital-bed="" placeholder="Number of available bed" ><br><p></p>
+            <input type="radio" aria-label="5" data-period-time="" name="period" id="day" value="day">
             <label for="day" class="day">Day</label><br>
-            <input type="radio" data-period-time="period" name="period" class="period" value="week">
+            <input type="radio" data-period-time="period" name="period" id="week" value="week">
             <label for="week" class="week">Week</label><br>
-            <input type="radio" data-period-time="period" name="period" class="period" value="month">
+            <input type="radio" data-period-time="period" name="period" id="month" value="month">
             <label for="month" class="month">Month</label><br>
             <button type="submit" form="form1" data-go-estimate="">Submit</button>
         </form>
@@ -59,8 +58,8 @@
 
  <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" defer integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" defer integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" defer integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
